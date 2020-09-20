@@ -2,8 +2,7 @@ $(function (){
     $('#submit-1').click(function (){
         let remainingDays = $('#remaining-days').val();
         let numberOfSubjects = $('#number-of-subjects').val();
-        
-        // convert to int data type and devide
+
         daysPerSubject = Math.round( parseInt(remainingDays) / parseInt(numberOfSubjects) );
         
         if(remainingDays !== '' && numberOfSubjects !== ''){
@@ -22,7 +21,6 @@ $(function (){
             $('#results-2').fadeIn(2000);
             let topicsPerDay = parseInt(numberOfTopics) / daysPerSubject;
             topicsPerDay = topicsPerDay.toFixed(1);
-            // if(topicsPerDay === 0){topicsPerDay++};
             
            $('#t-topics').html(topicsPerDay);
            $('#subject-name').html(subjectName);
@@ -30,3 +28,7 @@ $(function (){
        }
     })
 })
+
+//Used my phone to code, codes my be badly formatted. 
+//Please help me write cleaner code, by sending me your suggestions.
+//Email: stevenzulu123@gmail.com
