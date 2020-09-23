@@ -9,7 +9,7 @@ $(function (){
             $('#r-days').html(remainingDays);
             $('#subjects').html(numberOfSubjects);
             $('#days-per-subject').html(daysPerSubject);
-            $('#plan-suggestions').slideDown(3000);
+            $('#plan-suggestions').slideDown(5000);
         }
     })
     
@@ -18,7 +18,7 @@ $(function (){
         let numberOfTopics = $('#topics').val();
         
         if(subjectName !== '' && numberOfTopics !== '' ){
-            $('#results-2').fadeIn(2000);
+            $('#results-2').fadeIn(5000);
             let topicsPerDay = parseInt(numberOfTopics) / daysPerSubject;
             topicsPerDay = topicsPerDay.toFixed(1);
             
